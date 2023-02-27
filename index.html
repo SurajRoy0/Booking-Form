@@ -12,6 +12,10 @@
         background-size: cover;
         background-blend-mode: darken;
       }
+      #book-table{
+        background-color: rgb(4, 27, 53);
+      }
+      
       h1,
       p {
         color: #ff8800;
@@ -53,7 +57,7 @@
       time
     </p>
     <hr />
-    <div class="container">
+    <div id="main" class="container">
       <form>
         <div>
           <label for="name" class="from-la">Name</label>
@@ -94,6 +98,22 @@
         </div>
         <input type="submit" value="Get A Call" id="btn" />
       </form>
+      <div id="table-div">
+        <table id="book-table"class="table" style="color:white">
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Number</th>
+              <th scope="col">Date</th>
+              <th scope="col">Time</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody">
+          </tbody>
+        </table>
+        
+      </div>
     </div>
     <script src="/index.js"></script>
   </body>
